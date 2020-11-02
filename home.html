@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Daily Wage Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Daily Wage Calculator</h1>
+        </header>
+        <section class="main-content">
+            <p id="msgDisplay"></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content primary">
+                        <h2 class="text-center">Hours spent...</h2>
+                        <form id="calculate" action="#">
+                            <div class="form-group">
+                                <label for="expense">Total Hours Spent:</label>
+                                <input type="number" class="form-control" id="totalHours" placeholder="Eg. 10">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </form>
+                    </div>
+                    <!--.content-->
+                </div>
+                <!--.col-->
+
+                <div class="col-md-6">
+                    <div class="content secondary">
+
+                        <h2 class="text-center">Result</h2>
+
+                        <div id="analysis">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div class="result">
+                            <div class="alert alert-primary">
+                                <p>Contract Time Pay: # <span id="contractDisplay">0</span> </p>
+                            </div>
+                            <div class="alert alert-secondary">
+                                <p>Extra Hour Pay: # <span id="extraTimeDisplay">0</span></p>
+                            </div>
+                            <div class="alert alert-success">
+                                <p>Extra Hour Pay: # <span id="totalAmountDisplay">0</span></p>
+                            </div>
+                        </div>
+                        <!--.budget-->
+                    </div>
+                    <!--.content-->
+                </div>
+                <!--.col-->
+            </div>
+            <!--.row-->
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
