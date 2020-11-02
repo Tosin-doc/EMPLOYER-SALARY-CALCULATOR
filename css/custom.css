@@ -1,0 +1,55 @@
+body {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  
+    background: linear-gradient(to right, #004e92, #000428); 
+}
+
+header {
+    margin: 30px 0;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:#092b47;
+    font-size: 22px;
+    margin-bottom:30px;
+}
+
+.content {
+    padding:20px;
+}
+
+.main-content{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.result p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.result p span {
+    font-weight: normal;
+}
+
+.msg-error, .msg-success {
+    padding: 10px;
+    color:#fff;
+}
+
+.msg-error {
+    background: rgb(102, 8, 8);
+}
+
+.msg-success {
+    background: rgb(30, 146, 30);
+}
